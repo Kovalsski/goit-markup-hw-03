@@ -48,6 +48,10 @@ body {
   background-color: var(--primary-text-color-theme-light);
   letter-spacing: 0.03em;
 }
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* HEADER */
 .visually-hidden {
   position: absolute;
@@ -88,7 +92,7 @@ body {
   align-items: center;
 }
 .page-header{
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color);
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -189,7 +193,7 @@ body {
   padding-bottom: 94px;
 }
 .skills-list{
-  flex-basis: calc((100%-90px)/4);
+  flex-basis: calc((100% - 90px) / 4 );
 }
 .soft-skills-item {
   font-weight: 700;
@@ -211,11 +215,15 @@ body {
   text-align: center;
   color: var(--grey-color);
   padding-bottom: 50px;
+
+}
+.page-job{
+  padding-top: 0;
 }
 .job-page{
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
+
 }
 .image-work {
   width: 370px;
@@ -267,6 +275,7 @@ border-radius: 0px 0px 4px 4px;
 }
 .team {
   background-color: var(--back-color);
+  padding-top: 0;
 }
 /* footer */
 .fofter-container{
