@@ -110,7 +110,7 @@ body {
 {
   margin-right:50px;
 }
-.mail{
+.mail-link{
   margin-right: 50px;
 }
 .menu-link {
@@ -171,6 +171,9 @@ body {
   color: var(--primary-text-color-theme-light);
   border: none;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .first-container{
   display: flex;
@@ -189,8 +192,6 @@ body {
 .list-skils{
   display: flex;
   gap: 30px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .skills-list{
   flex-basis: calc((100% - 90px) / 4 );
@@ -201,6 +202,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--grey-color);
+  margin-bottom: 10px;
 }
 .soft-skills-link {
   font-size: 14px;
@@ -214,8 +216,7 @@ body {
   line-height: 1.16;
   text-align: center;
   color: var(--grey-color);
-  padding-bottom: 50px;
-
+  margin-bottom: 50px;
 }
 .page-job{
   padding-top: 0;
@@ -230,26 +231,26 @@ body {
   height: 294px;
 }
 .my-team{
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .list-team{
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 .my-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-
   color: var(--grey-color);
 }
 .image-team {
   width: 270px;
   height: 260px;
-  margin-bottom: 30px;
+}
+.team-info{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .name {
   font-weight: 500;
@@ -264,7 +265,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-  margin-bottom: 30px;
   text-align: center;
   color: var(--secondary-text-color-theme-light);
 }
@@ -275,13 +275,8 @@ border-radius: 0px 0px 4px 4px;
 }
 .team {
   background-color: var(--back-color);
-  padding-top: 0;
 }
 /* footer */
-.fofter-container{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .footer-page {
   background: var(--no-name-text-color);
 }
@@ -331,13 +326,11 @@ border-radius: 0px 0px 4px 4px;
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .button-item {
   background: var(--back-color);
-  width: 125px;
-  height: 38px;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -361,7 +354,9 @@ border-radius: 0px 0px 4px 4px;
   gap: 30px;
 }
 .project-list{
-  border: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   padding:20px 24px;
 }
 .project{
